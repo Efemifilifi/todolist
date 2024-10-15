@@ -8,12 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+   
+   
+   <img src="images/maewing .png" alt="mamas" id="maewing">
     <div class="container">
+        
         <div class="todo-app">
-            <h2>To-Do List </h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
+            <div class="container2">
+            <h2 >To-Do List </h2>
+            <button onclick="borrarTodo()" id="borrarTodo">Borrar todo</button>
+            </div>
+            <div class="row" id="container">
+                
+                    <input type="text" id="input-box" placeholder="Add your text">
+                
+                
+                    <button onclick="addTask()">Add</button>
+               
             </div>
             <ul id="list-container">
                <!-- <li class="checked">task 1</li>
@@ -21,6 +32,33 @@
                 <li>task 3</li>--> 
             </ul>
         </div>
+        <div id="calculator">
+            <input id="display" readonly>
+            <div id="keys">
+                <Button onclick="appendToDisplay('+')">+</Button>
+                <Button onclick="appendToDisplay('7')">7</Button>
+                <Button onclick="appendToDisplay('8')">8</Button>
+                <Button onclick="appendToDisplay('9')">9</Button>
+                <Button onclick="appendToDisplay('-')">-</Button>
+                <Button onclick="appendToDisplay('4')">4</Button>
+                <Button onclick="appendToDisplay('5')">5</Button>
+                <Button onclick="appendToDisplay('6')">6</Button>
+                <Button onclick="appendToDisplay('*')">*</Button>
+                <Button onclick="appendToDisplay('1')">1</Button>
+                <Button onclick="appendToDisplay('2')">2</Button>
+                <Button onclick="appendToDisplay('3')">3</Button>
+                <Button onclick="appendToDisplay('/')">/</Button>
+                <Button onclick="appendToDisplay('0')">0</Button>
+                <Button onclick="appendToDisplay('.')">.</Button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()">C</button>
+
+            </div>
+        </div>
+    </div>
+
+
+   
     </div>
     <script src="jjavaa.js"></script>
 </body>

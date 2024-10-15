@@ -4,14 +4,15 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-body{
-    overflow-y: hidden;
-}
+
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg,#153677,#4e085f);
+    background: linear-gradient(135deg,#15775a,#d41023);
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .todo-app{
     width: 100%;
@@ -20,6 +21,11 @@ body{
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+
+    
 }
 .todo-app h2{
     color: #002765;
@@ -40,6 +46,7 @@ body{
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
+    
 }
 input{
     flex:1;
@@ -47,6 +54,7 @@ input{
     outline: none;
     background:transparent ;
     padding: 10px;
+    width: 350px;
 }
 button{
     border: none;
@@ -99,4 +107,66 @@ ul li span {
 ul li span:hover{
     background: #edeef0;
     border-radius: 50%;
+}
+
+#maewing{
+    height: 100px;
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    opacity: 0.3;
+}
+#container{
+    display: flex;
+    
+   
+    
+}
+.contenedor{
+    border: #ff5945;
+} 
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px ;
+    
+}
+#borrarTodo{
+    margin-bottom: 20px;
+}
+/*A partir de aqui es la calculadora*/
+#calculator{
+    font-family: Arial,sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+.calculatorButton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0, 30);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor:pointer ;
+    text-align: center;
 }

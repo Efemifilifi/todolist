@@ -16,7 +16,11 @@ function addTask(){
     inputBox.value = "";
     saveData();
 }
-
+function borrarTodo(){
+    while(listContainer.lastElementChild){
+    listContainer.removeChild(listContainer.lastElementChild)}
+    saveData()
+}
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
