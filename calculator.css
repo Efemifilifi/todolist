@@ -17,16 +17,41 @@
     background-color: hsl(0, 0%, 95%);
 }
 .container{
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+
+}
+.cuadros{
+    
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: 	#205b7a;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+
 }
 #calculator{
-    margin: 50px;
+    
     font-family: Arial,sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
+    background-color: rgb(79, 80, 80);
+    border: 20px;
+    border-color: black;
     
 }
 #display{
@@ -40,13 +65,14 @@
 #keys{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 25px;
+    gap: 1%;
+    padding: 5%;
+    height: 75%;
+    width: 90%;
 }
-
-Button{
-    width: 100px;
-    height: 100px;
+button{
+    width: 100%;
+    height: 100%;
     border-radius: 50px;
     border: none;
     background-color: hsl(0, 0, 30);
@@ -68,4 +94,23 @@ button:active{
 }
 .operator-btn:active{
     background-color: hsl(35, 100%, 75%);
+}
+/*apartir de aqui es el historial*/
+
+#historial{
+    height: 75%;
+    min-width: 75%;
+    background-color: grey;
+    border: 50px;;
+    border-color: blueviolet;
+    border-radius: 25px;
+    margin: 50px;
+    overflow: auto;
+   
+}
+#tituloHistorial{
+    margin-bottom: 100;
+}
+p{
+    font-size: 2rem;
 }

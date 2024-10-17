@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
-
+const historial = document.getElementById("historial");
+let operaciones = ""
 function addTask(){
     if(inputBox.value == ''){
         alert("you must write something ");
@@ -16,6 +17,7 @@ function addTask(){
     inputBox.value = "";
     saveData();
 }
+
 function borrarTodo(){
     while(listContainer.lastElementChild){
     listContainer.removeChild(listContainer.lastElementChild)}

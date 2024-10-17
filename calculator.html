@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-   
+   <!--hay que hacer que se guarden las operaciones pasadas que hiciste-->
    
    <img src="images/maewing .png" alt="mamas" id="maewing">
     <div class="container">
         
-       
-        <div id="calculator">
+        <div class="cuadros">
+            <div id="calculator">
             <input id="display" readonly>
             <div id="keys">
                 <Button onclick="appendToDisplay('+')" class="operator-btn">+</Button>
@@ -36,7 +36,18 @@
                 <button onclick="clearDisplay()" class="operator-btn">C</button>
 
             </div>
+            </div>
         </div>
+        <div class="cuadros">
+            <div>
+            
+            </div>
+
+            <div id="historial">
+                <h1>Este es tu historial de operaciones:</h1>
+                
+            </div>
+        </div>    
     </div>
 
 
