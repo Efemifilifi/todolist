@@ -1,7 +1,17 @@
 * {
     margin:0px;
     padding:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+:root{
+    --blanco:#F9F9F9;
+    --negro:#0B0C10;
+    --verde:#2C6E49;
+    --rojo:#A23D2A;
+    --gris:#7F7F7F;
+}
+
+
 #maewing{
     height: 100px;
     width: 200px;
@@ -10,21 +20,91 @@
     right: 0px;
     opacity: 0.3;
 }
+/*apartir de aqui es el hero*/
+/*apartir de aqui son los containers*/
+#container1{
+    background-image: url(/images/azul.jpg);
+}
+#container2{
+    background-image: url(/images/rojo.jpg);
+}
+.plantilla1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5vh;
+    border-color: black;
+    border-width: 2.5px;
+    border-style: dashed;
+    background-size: 100%;
+    background-attachment:fixed ;
+    
+}
+
+.mitad{
+    border-width: 12px;
+    height: 60%;
+    width: 75%;
+    margin: 2%;
+    border-color: black;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2.5px;
+    border-style: dashed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#titles1{
+    color: #A23D2A;
+}
+#titles2{
+    color: #3066be;
+}
+.titles{
+    font-size: x-large;
+    width: 100%;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.herotext{
+    font-weight: bold;
+    color: var(--gris);
+    font-size: x-large;
+}
+
+.foto{
+   width: auto;
+   height: 100%;
+   border-radius: 20px;
+}
 #container{
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
+    background-color:var(--blanco) ;
+    
    
 }
+/*apartir de aqui son las cards*/
 #lista{
+    padding: 10vh;
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: var(--blanco);
     display: flex;
-    align-items: center;
-    
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    background-image: url("/images/igor-omilaev-dveJcN1Tgl0-unsplash.jpg");
     
 }
 
@@ -50,14 +130,16 @@ a{
 h1{
     width: 100%;
     text-align: center;
+    
 }
 p{
     width: 100%;
     text-align: center;
+    
 }
 .card{
-    margin: 50px;
-    width: 50%;
+   
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,23 +149,28 @@ p{
     border-style: dashed;
     
 }
-.titles{
-    width: 100%;
-    height: 33%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
+
 .body{
     width: 100%;
     height: 33%;
     display: flex;
     align-items: center;
     text-align: center;
+    
 }
 .buttons{
     width: 100%;
     height: 33%;
     display: flex;
     align-items: end;
+}
+/*apartir de aqui es el footer*/
+.footer{
+    width: 100%;
+    background-color: #2C6E49;
+    border-color: black;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 2.5px;
+    border-style: dashed;
 }

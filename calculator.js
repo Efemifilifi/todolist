@@ -13,6 +13,7 @@ function calculate(){
     try{
         addHistorial();
         display.value = eval(display.value);
+        saveData();
         
     }
     catch(error){
@@ -22,10 +23,20 @@ function calculate(){
 }
 function addHistorial(){
     operaciones += display.value +":"+ "<br>"+ eval(display.value)
-    let p = document.createElement("p");
+    let li = document.createElement("li");
     text = operaciones.toString()
-    p.innerHTML = text;
-    historial.appendChild(p)
+    li.innerHTML = text;
+    historial.appendChild(li)
     operaciones= ""
+    saveData()
     
+}
+function saveData(){
+    localStorage.setItem("data",historial.innerHTML)
+}
+function borrarTodo(){
+    while(historial.lastElementChild && historial.lastElementChild != "<h1>Este es tu historial de operaciones:</h1>"){
+        console.log(historial.lastElementChild)
+    historial.removeChild(historial.lastElementChild)}
+    saveData()
 }

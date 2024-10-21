@@ -97,7 +97,7 @@ button:active{
 }
 /*apartir de aqui es el historial*/
 
-#historial{
+#historial1{
     height: 75%;
     min-width: 75%;
     background-color: grey;
@@ -106,10 +106,15 @@ button:active{
     border-radius: 25px;
     margin: 50px;
     overflow: auto;
+    padding-left: -100px;
    
+}
+#historial{
+    padding-left: -25px;
 }
 #tituloHistorial{
     margin-bottom: 100;
+    padding-left: 0px;
 }
 p{
     font-size: 2rem;
