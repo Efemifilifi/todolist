@@ -23,10 +23,10 @@
 /*apartir de aqui es el hero*/
 /*apartir de aqui son los containers*/
 #container1{
-    background-image: url(/images/azul.jpg);
+    background-image: url(images/azul.jpg);
 }
 #container2{
-    background-image: url(/images/rojo.jpg);
+    background-image: url(images/rojo.jpg);
 }
 .plantilla1{
     display: flex;
@@ -104,7 +104,7 @@
     flex-wrap: wrap;
     gap: 2%;
     justify-content: center;
-    background-image: url("/images/igor-omilaev-dveJcN1Tgl0-unsplash.jpg");
+    background-image: url("images/igor-omilaev-dveJcN1Tgl0-unsplash.jpg");
     
 }
 
